@@ -2,27 +2,78 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>2급 듣기 목록</title>
+    <title>2급 듣기 패드</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        background-color: #3f51b5;
+        color: white;
+        padding: 20px;
+        margin-bottom: 40px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 0 auto;
+        max-width: 900px;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex: 1;
+      }
+
+      .link-box {
+        background-color: white;
+        border: 2px solid #3f51b5;
+        color: #3f51b5;
+        padding: 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .link-box:hover {
+        background-color: #3f51b5;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <h1>2급 듣기 패드</h1>
-    <ul>
-      <li><a href="lesson2-1.html">Lesson 2-1 듣기</a></li>
-      <li><a href="lesson2-2.html">Lesson 2-2 듣기</a></li>
-      <li><a href="lesson2-3.html">Lesson 2-3 듣기</a></li>
-      <li><a href="lesson2-4.html">Lesson 2-4 듣기</a></li>
-      <li><a href="lesson2-5.html">Lesson 2-5 듣기</a></li>
-      <li><a href="lesson2-6.html">Lesson 2-6 듣기</a></li>
-      <li><a href="lesson2-7.html">Lesson 2-7 듣기</a></li>
-      <li><a href="lesson2-8.html">Lesson 2-8 듣기</a></li>
-      <li><a href="lesson2-9.html">Lesson 2-9 듣기</a></li>
-      <li><a href="lesson2-10.html">Lesson 2-10 듣기</a></li>
-      <li><a href="lesson2-11.html">Lesson 2-11 듣기</a></li>
-      <li><a href="lesson2-12.html">Lesson 2-12 듣기</a></li>
-      <li><a href="lesson2-13.html">Lesson 2-13 듣기</a></li>
-      <li><a href="lesson2-14.html">Lesson 2-14 듣기</a></li>
-      <li><a href="lesson2-15.html">Lesson 2-15 듣기</a></li>
-      <li><a href="lesson2-16.html">Lesson 2-16 듣기</a></li>
-    </ul>
+    <div class="container">
+      <div class="column">
+        <a class="link-box" href="lesson2-1.html">Lesson 2-1</a>
+        <a class="link-box" href="lesson2-2.html">Lesson 2-2</a>
+        <a class="link-box" href="lesson2-3.html">Lesson 2-3</a>
+        <a class="link-box" href="lesson2-4.html">Lesson 2-4</a>
+        <a class="link-box" href="lesson2-5.html">Lesson 2-5</a>
+        <a class="link-box" href="lesson2-6.html">Lesson 2-6</a>
+        <a class="link-box" href="lesson2-7.html">Lesson 2-7</a>
+        <a class="link-box" href="lesson2-8.html">Lesson 2-8</a>
+      </div>
+      <div class="column">
+        <a class="link-box" href="lesson2-9.html">Lesson 2-9</a>
+        <a class="link-box" href="lesson2-10.html">Lesson 2-10</a>
+        <a class="link-box" href="lesson2-11.html">Lesson 2-11</a>
+        <a class="link-box" href="lesson2-12.html">Lesson 2-12</a>
+        <a class="link-box" href="lesson2-13.html">Lesson 2-13</a>
+        <a class="link-box" href="lesson2-14.html">Lesson 2-14</a>
+        <a class="link-box" href="lesson2-15.html">Lesson 2-15</a>
+        <a class="link-box" href="lesson2-16.html">Lesson 2-16</a>
+      </div>
+    </div>
   </body>
 </html>
