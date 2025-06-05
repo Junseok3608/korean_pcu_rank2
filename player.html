@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>듣기 플레이어</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h2 id="title">듣기</h2>
+  </header>
+
+  <main class="player-container">
+    <audio id="player" controls controlsList="nodownload">
+      <source id="source" src="" type="audio/mpeg" />
+      브라우저가 오디오를 지원하지 않습니다.
+    </audio>
+    <p class="notice">👆 버튼을 눌러 듣기를 시작하세요!</p>
+  </main>
+
+  <footer>
+    <a class="back-button" href="index.html">⏪ 목차로 돌아가기</a>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const level = params.get("level") || "2";
+    const lesson = params.get("lesson") || "1";
+    const file = `lesson${level}-${lesson}.mp3`;
+    const title = `${level}급 ${lesson}과 듣기`;
+
+    document.getElementById("title").textContent = title;
+    document.getElementById("source").src = file;
+    document.getElementById("player").load();
+  </script>
+</body>
+</html>
